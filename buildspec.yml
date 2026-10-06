@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Packaging static site into dist/"
+      - mkdir -p dist
+      - cp index.html timer.html dist/
+      - cp -r images dist/
+      - ls -R dist
+
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/**/*
+    - dist/**/*
