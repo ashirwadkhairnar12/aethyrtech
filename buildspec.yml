@@ -7,6 +7,7 @@ phases:
       - mkdir -p dist
       - cp index.html timer.html dist/
       - cp -r images dist/
+      - chmod +x scripts/*.sh
       - ls -R dist
 
 artifacts:
